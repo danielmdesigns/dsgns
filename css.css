@@ -13,7 +13,8 @@ body{
   background-image: url("imgs/background.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: sans-serif;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
 }
 main{
   -webkit-box-sizing: border-box;
@@ -21,7 +22,6 @@ main{
   box-sizing: border-box;
   width: 100%;
   max-width: 800px;
-  /*border: 1px solid red;*/
   display: block;
   margin: 0 auto;
   padding: 2rem;
@@ -52,18 +52,15 @@ nav ul li {
   display: inline-block;
   padding: 10px;
   font-size: 10px;
+  font-weight: 700;
   letter-spacing: 2px;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease-out;
 }
   nav ul li:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #f05a4e;
     cursor: pointer;
   }
-
-/*nav ul li:hover {
-  background-color: #232323;
-}*/
 
 .toggle {
   width: 100%;
@@ -93,6 +90,11 @@ nav ul li {
   height: 40px;
 }
 
+.merch{
+  width: 100%;
+  margin: 2.4rem 0;
+}
+
 @media screen and (max-width: 800px) {
   body{
     background-size: 200%;
@@ -109,6 +111,13 @@ nav ul li {
   }
   .social{
     width: 100%;
+    margin: 2rem auto;
+  }
+  .social-icon{
+    height: 30px;
+  }
+  .merch{
+    margin: 1rem 0;
   }
   .showing {
     max-height: 20em;
@@ -122,7 +131,7 @@ nav ul li {
   }
   nav ul li:hover{
     border-bottom: 2px solid transparent;
-    color: red;
+    color: #f05a4e;
     cursor: pointer;
   }
   .toggle {
@@ -130,12 +139,97 @@ nav ul li {
     text-align: center;
     font-size: 10px;
     letter-spacing: 2px;
+    font-weight: 700;
   }
   .toggle:before {
     content: "☰";
     font-size: 10px;
     letter-spacing: 2px;
     padding: 5px;
+    font-weight: 700;
   }
 }
 
+
+
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 auto;
+}
+th {
+  /*background-color: #eee;*/
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+th,
+td {
+  border: 0.125em solid #f05a4e;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  line-height: 1.5;
+  padding: 0.75em;
+  text-align: left;
+}
+
+/* Stack rows vertically on small screens */
+@media (max-width: 30em) {
+  /* Hide column labels */
+	thead tr {
+		position: absolute;
+		top: -9999em;
+		left: -9999em;
+	}
+	tr {
+    border: 0.125em solid #f05a4e;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+	/* Leave a space between table rows */
+  tr + tr {
+    margin-top: 1.5em;
+  }
+  /* Get table cells to act like rows */
+  tr,
+  td {
+		display: block;
+	}
+	td {
+		border: none;
+		/*border-bottom: 0.125em solid #333;*/
+	/* Leave a space for data labels */
+		padding-left: 50%;
+	}
+	/* Add data labels */
+  td:before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: -100%;
+    width: 100%;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+/* Stack labels vertically on smaller screens */
+@media (max-width: 20em) {
+  td {
+    padding-left: 0.75em;
+  }
+  td:before {
+    display: block;
+    margin-bottom: 0.75em;
+    margin-left: 0;
+  }
+}
