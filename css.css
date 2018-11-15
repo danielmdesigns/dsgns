@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #000000;
+  background-image: url("imgs/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+main{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  /*border: 1px solid red;*/
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.logo{
+  width: 100%;
+  max-width: 500px;
+  margin: 2.5rem auto 4rem;
+  display: block;
+}
+  
+
+nav ul {
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: max-height 0.4s;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-out;
+}
+  nav ul li:hover{
+    border-bottom: 2px solid red;
+    cursor: pointer;
+  }
+
+/*nav ul li:hover {
+  background-color: #232323;
+}*/
+
+.toggle {
+  width: 100%;
+  text-align: left;
+  box-sizing: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+.video{
+  width: 100%;
+  background-color: red;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,80%);
+}
+
+.social{
+  width: 75%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon{
+  height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  body{
+    background-size: 200%;
+    background-position: center top;
+  }
+  main{
+    padding-top: 0;
+  }
+  .logo{
+    margin: 1rem auto 2.5rem;
+  }
+  nav ul {
+    max-height: 0;
+  }
+  .social{
+    width: 100%;
+  }
+  .showing {
+    max-height: 20em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    transition: color 0.3s ease-out;
+  }
+  nav ul li:hover{
+    border-bottom: 2px solid transparent;
+    color: red;
+    cursor: pointer;
+  }
+  .toggle {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .toggle:before {
+    content: "☰";
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 5px;
+  }
+}
+
