@@ -73,7 +73,7 @@ nav ul li {
 }
 .video{
   width: 100%;
-  background-color: red;
+  background-color: #f05a4e;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -82,17 +82,50 @@ nav ul li {
 
 .social{
   width: 75%;
-  margin: 4rem auto;
+  margin: 4rem auto 4rem;
   display: flex;
   justify-content: space-between;
 }
 .social-icon{
   height: 40px;
 }
-
+#spotify:hover{content: url("imgs/spotify-hover.png");}
+#apple:hover{content: url('imgs/apple-hover.png');}
+#twitter:hover{content: url("imgs/twitter-hover.png");}
+#instagram:hover{content: url('imgs/instagram-hover.png');}
+#facebook:hover{content: url("imgs/facebook-hover.png");}
+#youtube:hover{content: url('imgs/youtube-hover.png');}
+hr{
+	border-color: #212121;
+}
+h1{
+	text-align: center;
+	/*letter-spacing: 8px;*/
+	font-family: 'Playfair Display', serif;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
 .merch{
   width: 100%;
   margin: 2.4rem 0;
+}
+.button{
+	text-align: center;
+	padding: 15px 30px;
+	background-color: #f05a4e;
+	margin: 2rem auto;
+	display:block;
+	max-width: 100px;
+	color: white;
+	text-decoration:none;
+	font-weight: 600;
+	letter-spacing:1;
+	transition: background-color 0.3s ease-out;
+	border-radius: 4px;
+}
+.button:hover{
+	background-color: #E34538;
 }
 
 @media screen and (max-width: 800px) {
