@@ -85,7 +85,7 @@ nav ul li {
 /* ICONS */
 .social{
   width: 75%;
-  margin: 4rem auto 4rem;
+  margin: 4rem auto 3.5rem;
   display: flex;
   justify-content: space-between;
 }
