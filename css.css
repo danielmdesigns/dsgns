@@ -108,9 +108,9 @@ nav ul li:hover
     text-align: center;
 
     background-color: #f05a4e;
-    -webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,80%);
-	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,80%);
-	box-shadow: 0 0 20px 10px rgba(0,0,0,80%);
+    -webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
 }
 
 /* ICONS */
