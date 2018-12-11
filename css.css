@@ -1,285 +1,400 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 /* GENERAL */
-*{
-  padding: 0;
-  margin: 0;
+*
+{
+    margin: 0;
+    padding: 0;
 }
-body{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #000000;
-  background-image: url("imgs/background.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+body
+{
+    font-family: 'Montserrat', sans-serif;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    color: #fff;
+    background-color: #000;
+    background-image: url('imgs/background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-main{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
-  padding: 2rem;
+main
+{
+    display: block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
-.logo{
-  width: 100%;
-  max-width: 500px;
-  margin: 2.5rem auto 4rem;
-  display: block;
+.logo
+{
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+    margin: 2.5rem auto 4rem;
 }
-  
+
 /* MENU */
-nav ul {
-  overflow: hidden;
-  color: #fff;
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  transition: max-height 0.4s;
+nav ul
+{
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    transition: max-height .4s;
+    text-align: center;
+
+    color: #fff;
 }
 
-nav a {
-  text-decoration: none;
-  color: inherit;
+nav a
+{
+    text-decoration: none;
+
+    color: inherit;
 }
 
-nav ul li {
-  display: inline-block;
-  padding: 10px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease-out;
+nav ul li
+{
+    font-size: 10px;
+    font-weight: 700;
+
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: border-bottom .3s ease-out;
+    letter-spacing: 2px;
+
+    border-bottom: 2px solid transparent;
 }
-  nav ul li:hover{
-    border-bottom: 2px solid #f05a4e;
+nav ul li:hover
+{
     cursor: pointer;
-  }
 
-.toggle {
-  width: 100%;
-  text-align: left;
-  box-sizing: 100%;
-  padding: 15px 0;
-  cursor: pointer;
-  color: #fff;
-  display: none;
+    border-bottom: 2px solid #f05a4e;
+}
+
+.toggle
+{
+    display: none;
+
+    box-sizing: 100%;
+    width: 100%;
+    padding: 15px 0;
+
+    cursor: pointer;
+    text-align: left;
+
+    color: #fff;
 }
 
 /* VIDEO */
-.video{
-  width: 100%;
-  background-color: #f05a4e;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0px 0px 20px 10px rgba(0,0,0,80%);
+.video
+{
+    display: block;
+
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #f05a4e;
+    -webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,80%);
+	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,80%);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,80%);
 }
 
 /* ICONS */
-.social{
-  width: 75%;
-  margin: 4rem auto 3.5rem;
-  display: flex;
-  justify-content: space-between;
+.social
+{
+    display: flex;
+
+    width: 75%;
+    margin: 4rem auto 3.5rem;
+
+    justify-content: space-between;
 }
-i{
-	font-size: 40px;
-	color: white;
-	transition: color 0.3s ease-out;
+i
+{
+    font-size: 40px;
+
+    transition: color .3s ease-out;
+
+    color: white;
 }
-.fa-spotify:hover{color: #1db954;}
-.fa-apple:hover{color: #7D7D7D;}
-.fa-twitter:hover{color: #38A1F3;}
-.fa-instagram:hover{color: #c32aa3;}
-.fa-facebook-f:hover{color: #3b5998;}
-.fa-youtube:hover{color: #ff0000;}
-.fa-bandcamp:hover{color: #2FD1BC;}
+.fa-spotify:hover
+{
+    color: #1db954;
+}
+.fa-apple:hover
+{
+    color: #7d7d7d;
+}
+.fa-twitter:hover
+{
+    color: #38a1f3;
+}
+.fa-instagram:hover
+{
+    color: #c32aa3;
+}
+.fa-facebook-f:hover
+{
+    color: #3b5998;
+}
+.fa-youtube:hover
+{
+    color: #f00;
+}
+.fa-bandcamp:hover
+{
+    color: #2fd1bc;
+}
 
 /* SECTIONS */
-hr{
-	border-color: #212121;
-	color: #212121;
+hr
+{
+    color: #212121;
+    border-color: #212121;
 }
-.merch, .tour{
-  width: 100%;
-  margin: 2.4rem 0;
+.merch,
+.tour
+{
+    width: 100%;
+    margin: 2.4rem 0;
 }
 
 /* HEADINGS */
-h1{
-	text-align: center;
-	font-family: 'Playfair Display', serif;
-	margin-top: 4rem;
-	margin-bottom: 2rem;
-	text-transform: uppercase;
+h1
+{
+    font-family: 'Playfair Display', serif;
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* BUTTON */
-.button{
-	text-align: center;
-	padding: 15px 30px;
-	border: 2px solid white;
-	margin: 2rem auto 4rem;
-	display:block;
-	max-width: 100px;
-	color: white;
-	text-decoration:none;
-	font-weight: 600;
-	letter-spacing:1;
-	transition: background-color 0.3s ease-out, color 0.3s ease-out;
+.button
+{
+    font-weight: 600;
+
+    display: block;
+
+    max-width: 100px;
+    margin: 2rem auto 4rem;
+    padding: 15px 30px;
+
+    transition: background-color .3s ease-out, color .3s ease-out;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1;
+
+    color: white;
+    border: 2px solid white;
 }
-.button:hover{
-	background-color: #FFFFFF;
-	color: #000000;
+.button:hover
+{
+    color: #000;
+    background-color: #fff;
 }
 
-@media screen and (max-width: 800px) {
-  body{
-    background-size: 200%;
-    background-position: center top;
-  }
-  main{
-    padding-top: 0;
-  }
-  .logo{
-    margin: 1rem auto 2.5rem;
-  }
-  nav ul {
-    max-height: 0;
-  }
-  .social{
-    width: 100%;
-    margin: 2rem auto;
-  }
-  i{
-    font-size: 30px;
-  }
-	h1{
-		margin-top: 2rem;
-	}
-	.button{
-		margin-bottom: 3rem;
-	}
-  .merch{
-    margin: 1rem 0;
-  }
-  .showing {
-    max-height: 20em;
-  }
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-    transition: color 0.3s ease-out;
-  }
-  nav ul li:hover{
-    border-bottom: 2px solid transparent;
-    color: #f05a4e;
-    cursor: pointer;
-  }
-  .toggle {
-    display: block;
-    text-align: center;
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-weight: 700;
-  }
-  .toggle:before {
-    content: "☰";
-    font-size: 10px;
-    letter-spacing: 2px;
-    padding: 5px;
-    font-weight: 700;
-  }
+@media screen and (max-width: 800px)
+{
+    body
+    {
+        background-position: center top;
+        background-size: 200%;
+    }
+    main
+    {
+        padding-top: 0;
+    }
+    .logo
+    {
+        margin: 1rem auto 2.5rem;
+    }
+    nav ul
+    {
+        max-height: 0;
+    }
+    .social
+    {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    i
+    {
+        font-size: 30px;
+    }
+    h1
+    {
+        margin-top: 2rem;
+    }
+    .button
+    {
+        margin-bottom: 3rem;
+    }
+    .merch
+    {
+        margin: 1rem 0;
+    }
+    .showing
+    {
+        max-height: 20em;
+    }
+    nav ul li
+    {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+
+        transition: color .3s ease-out;
+        text-align: center;
+    }
+    nav ul li:hover
+    {
+        cursor: pointer;
+
+        color: #f05a4e;
+        border-bottom: 2px solid transparent;
+    }
+    .toggle
+    {
+        font-size: 10px;
+        font-weight: 700;
+
+        display: block;
+
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .toggle:before
+    {
+        font-size: 10px;
+        font-weight: 700;
+
+        padding: 5px;
+
+        content: '☰';
+        letter-spacing: 2px;
+    }
 }
 
 
 
 
 /* TABLE */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 600px;
-  font-weight: 400;
-  font-size: 12px;
-  margin: 4rem auto;
+table
+{
+    font-size: 12px;
+    font-weight: 400;
+
+    width: 100%;
+    max-width: 600px;
+    margin: 4rem auto;
+
+    border-collapse: collapse;
 }
-th {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 10px;
+th
+{
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 th,
-td {
-  border: 0.125em solid #212121;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  line-height: 1.5;
-  padding: 0.75em;
-  text-align: left;
+td
+{
+    line-height: 1.5;
+
+    padding: .75em;
+
+    text-align: left;
+
+    border: .125em solid #212121;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 /* Stack rows vertically on small screens */
-@media (max-width: 30em) {
-  /* Hide column labels */
-	thead tr {
-		position: absolute;
-		top: -9999em;
-		left: -9999em;
-	}
-	tr {
-    border: 0.125em solid #212121;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-  }
-	/* Leave a space between table rows */
-  tr + tr {
-    margin-top: 1.5em;
-  }
-  /* Get table cells to act like rows */
-  tr,
-  td {
-		display: block;
-	}
-	td {
-		border: none;
-		/*border-bottom: 0.125em solid #333;*/
-	/* Leave a space for data labels */
-		padding-left: 50%;
-	}
-	/* Add data labels */
-  td:before {
-    content: attr(data-label);
-    display: inline-block;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-left: -100%;
-    width: 100%;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+@media (max-width: 30em)
+{
+    /* Hide column labels */
+    thead tr
+    {
+        position: absolute;
+        top: -9999em;
+        left: -9999em;
+    }
+    tr
+    {
+        border: .125em solid #212121;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    /* Leave a space between table rows */
+    tr + tr
+    {
+        margin-top: 1.5em;
+    }
+    /* Get table cells to act like rows */
+    tr,
+    td
+    {
+        display: block;
+    }
+    td
+    {
+        /*border-bottom: 0.125em solid #333;*/
+        /* Leave a space for data labels */
+        padding-left: 50%;
+
+        border: none;
+    }
+    /* Add data labels */
+    td:before
+    {
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 1.5;
+
+        display: inline-block;
+
+        width: 100%;
+        margin-left: -100%;
+
+        content: attr(data-label);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
 }
 /* Stack labels vertically on smaller screens */
-@media (max-width: 20em) {
-  td {
-    padding-left: 0.75em;
-  }
-  td:before {
-    display: block;
-    margin-bottom: 0.75em;
-    margin-left: 0;
-  }
+@media (max-width: 20em)
+{
+    td
+    {
+        padding-left: .75em;
+    }
+    td:before
+    {
+        display: block;
+
+        margin-bottom: .75em;
+        margin-left: 0;
+    }
 }
