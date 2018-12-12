@@ -1,29 +1,23 @@
 @charset 'UTF-8';
 
 /* GENERAL */
-*
-{
+*{
     margin: 0;
     padding: 0;
 }
-body
-{
+body{
     font-family: 'Montserrat', sans-serif;
-
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-
     color: #fff;
     background-color: #000;
     background-image: url('imgs/background.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
-main
-{
+main{
     display: block;
-
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -32,182 +26,11 @@ main
     margin: 0 auto;
     padding: 2rem;
 }
-.logo
-{
+.logo{
     display: block;
-
     width: 100%;
     max-width: 500px;
     margin: 2.5rem auto 4rem;
-}
-
-/* MENU */
-nav ul
-{
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-
-    transition: max-height .4s;
-    text-align: center;
-
-    color: #fff;
-}
-
-nav a
-{
-    text-decoration: none;
-
-    color: inherit;
-}
-
-nav ul li
-{
-    font-size: 10px;
-    font-weight: 700;
-
-    display: inline-block;
-
-    padding: 10px;
-
-    transition: border-bottom .3s ease-out;
-    letter-spacing: 2px;
-
-    border-bottom: 2px solid transparent;
-}
-nav ul li:hover
-{
-    cursor: pointer;
-
-    border-bottom: 2px solid #f05a4e;
-}
-
-.toggle
-{
-    display: none;
-
-    box-sizing: 100%;
-    width: 100%;
-    padding: 15px 0;
-
-    cursor: pointer;
-    text-align: left;
-
-    color: #fff;
-}
-
-/* VIDEO */
-.video
-{
-    display: block;
-
-    width: 100%;
-    margin: 0 auto;
-
-    text-align: center;
-
-    background-color: #f05a4e;
-    -webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
-	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
-	box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
-}
-
-/* ICONS */
-.social
-{
-    display: flex;
-
-    width: 75%;
-    margin: 4rem auto 3.5rem;
-
-    justify-content: space-between;
-}
-i
-{
-    font-size: 40px;
-
-    transition: color .3s ease-out;
-
-    color: white;
-}
-.fa-spotify:hover
-{
-    color: #1db954;
-}
-.fa-apple:hover
-{
-    color: #7d7d7d;
-}
-.fa-twitter:hover
-{
-    color: #38a1f3;
-}
-.fa-instagram:hover
-{
-    color: #c32aa3;
-}
-.fa-facebook-f:hover
-{
-    color: #3b5998;
-}
-.fa-youtube:hover
-{
-    color: #f00;
-}
-.fa-bandcamp:hover
-{
-    color: #2fd1bc;
-}
-
-/* SECTIONS */
-hr
-{
-    color: #212121;
-    border-color: #212121;
-}
-.merch,
-.tour
-{
-    width: 100%;
-    margin: 2.4rem 0;
-}
-
-/* HEADINGS */
-h1
-{
-    font-family: 'Playfair Display', serif;
-
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-
-    text-align: center;
-    text-transform: uppercase;
-}
-
-/* BUTTON */
-.button
-{
-    font-weight: 600;
-
-    display: block;
-
-    max-width: 100px;
-    margin: 2rem auto 4rem;
-    padding: 15px 30px;
-
-    transition: background-color .3s ease-out, color .3s ease-out;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 1;
-
-    color: white;
-    border: 2px solid white;
-}
-.button:hover
-{
-    color: #000;
-    background-color: #fff;
 }
 .dwm{
 	display: block;
@@ -215,83 +38,201 @@ h1
 	margin: 6rem auto 2.4rem;
 }
 
-@media screen and (max-width: 800px)
+
+
+/* MENU */
+nav ul
 {
-    body
-    {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: max-height .4s;
+    text-align: center;
+    color: #fff;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul li{
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px;
+    transition: border-bottom .3s ease-out;
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+}
+nav ul li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #f05a4e;
+}
+.toggle{
+    display: none;
+    box-sizing: 100%;
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+    text-align: left;
+    color: #fff;
+}
+
+
+
+/* VIDEO */
+.video{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    -webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.8);
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+/* ICONS */
+.social{
+    display: flex;
+    width: 75%;
+    margin: 4rem auto 3.5rem;
+    justify-content: space-between;
+}
+i{
+    font-size: 40px;
+    transition: color .3s ease-out;
+    color: white;
+}
+.fa-spotify:hover{color: #1db954;}
+.fa-apple:hover{color: #7d7d7d;}
+.fa-twitter:hover{color: #38a1f3;}
+.fa-instagram:hover{color: #c32aa3;}
+.fa-facebook-f:hover{color: #3b5998;}
+.fa-youtube:hover{color: #f00;}
+.fa-bandcamp:hover{color: #2fd1bc;}
+
+
+
+/* SECTIONS */
+hr{
+    color: #212121;
+    border-color: #212121;
+}
+.merch, .tour{
+    width: 100%;
+    margin: 2.4rem 0;
+}
+
+
+
+/* HEADINGS */
+h1{
+    font-family: 'Playfair Display', serif;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3{
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+
+/* BUTTON */
+.button{
+    font-weight: 600;
+    display: block;
+    max-width: 100px;
+    margin: 2rem auto 4rem;
+    padding: 15px 30px;
+    transition: background-color .3s ease-out, color .3s ease-out;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1;
+    color: white;
+    border: 2px solid white;
+}
+.button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* 800PX & SMALLER */
+@media screen and (max-width: 800px){
+    body{
         background-position: center top;
         background-size: 200%;
     }
-    main
-    {
+    main{
         padding-top: 0;
     }
-    .logo
-    {
+    .logo{
         margin: 1rem auto 2.5rem;
     }
-    nav ul
-    {
+    nav ul{
         max-height: 0;
     }
-    .social
-    {
+    .social{
         width: 100%;
         margin: 2rem auto;
     }
-    i
-    {
+    i{
         font-size: 30px;
     }
-    h1
-    {
+    h1{
         margin-top: 2rem;
     }
-    .button
-    {
+    .button{
         margin-bottom: 3rem;
     }
-    .merch
-    {
+    .merch{
         margin: 1rem 0;
     }
-    .showing
-    {
+    .showing{
         max-height: 20em;
     }
-    nav ul li
-    {
+    nav ul li{
         box-sizing: border-box;
         width: 100%;
         padding: 15px;
-
         transition: color .3s ease-out;
         text-align: center;
     }
-    nav ul li:hover
-    {
+    nav ul li:hover{
         cursor: pointer;
-
         color: #f05a4e;
         border-bottom: 2px solid transparent;
     }
-    .toggle
-    {
+    .toggle{
         font-size: 10px;
         font-weight: 700;
-
         display: block;
-
         text-align: center;
         letter-spacing: 2px;
     }
-    .toggle:before
-    {
+    .toggle:before{
         font-size: 10px;
         font-weight: 700;
-
         padding: 5px;
-
         content: '☰';
         letter-spacing: 2px;
     }
@@ -299,106 +240,78 @@ h1
 
 
 
-
 /* TABLE */
-table
-{
+table{
     font-size: 12px;
     font-weight: 400;
-
     width: 100%;
     max-width: 600px;
     margin: 4rem auto;
-
     border-collapse: collapse;
 }
-th
-{
+th{
     font-size: 10px;
     font-weight: bold;
-
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-th,
-td
-{
+th, td{
     line-height: 1.5;
-
     padding: .75em;
-
     text-align: left;
-
     border: .125em solid #212121;
     border-top: 0;
     border-right: 0;
     border-left: 0;
 }
 
-/* Stack rows vertically on small screens */
-@media (max-width: 30em)
-{
+/* 480PX & SMALLER */
+@media (max-width: 480px){
     /* Hide column labels */
-    thead tr
-    {
+    thead tr{
         position: absolute;
         top: -9999em;
         left: -9999em;
     }
-    tr
-    {
+    tr{
         border: .125em solid #212121;
         border-top: 0;
         border-right: 0;
         border-left: 0;
     }
     /* Leave a space between table rows */
-    tr + tr
-    {
+    tr + tr{
         margin-top: 1.5em;
     }
     /* Get table cells to act like rows */
-    tr,
-    td
-    {
+    tr, td{
         display: block;
     }
-    td
-    {
-        /*border-bottom: 0.125em solid #333;*/
+    td{
         /* Leave a space for data labels */
         padding-left: 50%;
-
         border: none;
     }
     /* Add data labels */
-    td:before
-    {
+    td:before{
         font-size: 10px;
         font-weight: bold;
         line-height: 1.5;
-
         display: inline-block;
-
         width: 100%;
         margin-left: -100%;
-
         content: attr(data-label);
         letter-spacing: 1px;
         text-transform: uppercase;
     }
 }
-/* Stack labels vertically on smaller screens */
-@media (max-width: 20em)
-{
-    td
-    {
+/* 320PX & SMALLER */
+@media (max-width: 320px){
+    td{
         padding-left: .75em;
     }
-    td:before
-    {
+    td:before{
         display: block;
-
         margin-bottom: .75em;
         margin-left: 0;
     }
