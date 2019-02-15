@@ -35,6 +35,7 @@ main{
 .dwm{
 	display: block;
 	height: 50px;
+	width: auto;
 	margin: 6rem auto 2.4rem;
 }
 
@@ -174,6 +175,84 @@ h3{
     color: #000;
     background-color: #fff;
 }
+
+
+
+/* LYRICS */
+.album-lyrics {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 767px) {
+  .album-lyrics {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+}
+
+.lyrics {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #FFF;
+}
+.lyrics:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 767px) {
+  .lyrics {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .lyrics:last-child {
+    margin-right: 0;
+  }
+}
+
+.album {
+  margin-bottom: 4rem;
+}
+@media (min-width: 767px) {
+  .album {
+    width: 100%;
+  }
+}
+
+.song {
+  text-align: left;
+  margin-bottom: 24px;
+}
+@media (min-width: 767px) {
+  .song {
+    margin-left: 20px;
+  }
+}
+
+.song-title {
+  font-family: "Playfair", Serif;
+  font-size: 2rem;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.song-lyric {
+  font-family: "Montserrat", Sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
 
 
 /* 800PX & SMALLER */
