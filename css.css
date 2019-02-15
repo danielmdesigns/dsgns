@@ -213,11 +213,12 @@ h3{
 }
 
 .album {
-  margin-bottom: 4rem;
+  margin-bottom: 2.4rem;
 }
 @media (min-width: 767px) {
   .album {
     width: 100%;
+	margin-top: -24px;
   }
 }
 
