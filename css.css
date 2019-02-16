@@ -135,6 +135,7 @@ hr{
     border-color: #212121;
 }
 .merch, .tour{
+	display: block;
     width: 100%;
     margin: 2.4rem 0;
 }
@@ -247,7 +248,7 @@ h3{
   line-height: 2;
 }
 
-img {
+.album > img {
   width: 100%;
   max-width: 400px;
 }
