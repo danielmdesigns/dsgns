@@ -393,7 +393,7 @@ th, td{
 
 .concert-passed{
     color: #666666;
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
 }
 
 /* 320PX & SMALLER */
