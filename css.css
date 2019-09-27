@@ -326,7 +326,7 @@ table{
     font-size: 12px;
     font-weight: 400;
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 4rem auto;
     border-collapse: collapse;
 }
