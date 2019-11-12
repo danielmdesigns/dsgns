@@ -15,6 +15,7 @@ body{
     background-image: url('imgs/background.png');
     background-repeat: no-repeat;
     background-size: 100%;
+    /* background-attachment: fixed; */
 }
 main{
     display: block;
