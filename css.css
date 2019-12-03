@@ -388,13 +388,9 @@ th, td{
     }
 }
 
-/* .concert-passed{
-    display: none;
-} */
-
 .concert-passed{
-    color: #666666;
-    /* text-decoration: line-through; */
+    /* color: #666666; */
+    display: none;
 }
 
 /* 320PX & SMALLER */
