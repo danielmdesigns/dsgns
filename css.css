@@ -40,6 +40,11 @@ main{
 	margin: 6rem auto 2.4rem;
 }
 
+/*---------- HELPERS ----------*/
+.__margin-4rem{
+    margin-bottom: 4rem;
+}
+
 
 
 /* MENU */
