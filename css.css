@@ -185,6 +185,32 @@ h3{
 
 
 
+
+
+/* TOUR DATES */
+.bit-widget, .bit-layout-ipad, .bit-layout-logo-ipad{
+	text-align: left !important;
+}
+
+.bit-widget.bit-layout-ipad .bit-event{padding-left: 0 !important; padding-right: 0 !important;}
+.bit-description{text-align: left !important;}
+.bit-event, .bit-mobile-date-and-share-wrapper, .bit-details, .bit-mobile-date, .bit-details, .bit-event-buttons{
+	display: inline-block !important;
+	
+}
+.bit-mobile-event-icons, .bit-nav-bar{display: none !important;}
+.bit-widget, .bit-upcoming-events{
+	border-bottom: none !important;}
+.bit-widget .bit-event{border-top: none !important;}
+.bit-widget .bit-offers{
+	border-radius: 0 !important;
+}
+
+
+
+
+
+
 /* LYRICS */
 .album-lyrics {
   display: flex;
